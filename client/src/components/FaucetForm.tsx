@@ -103,7 +103,7 @@ const FaucetForm = (props: any) => {
 
             let item = <div className='select-dropdown'>
                 <img alt = { chain.NAME } src = { chain.IMAGE } />
-                { chain.ID == ch ? chain.TOKEN : chain.NAME }
+                { chain.ID === ch ? chain.TOKEN : chain.NAME }
 
                 <span style={{color: 'rgb(180, 180, 183)', fontSize: "10px", marginLeft: "5px"}}>
                     {
@@ -114,7 +114,7 @@ const FaucetForm = (props: any) => {
                 </span>
             </div>
 
-            if((chain.CONTRACTADDRESS && chain.HOSTID == ch) || chain.ID == ch) {
+            if((chain.CONTRACTADDRESS && chain.HOSTID === ch) || chain.ID === ch) {
                 newOptions.push({
                     label: item,
                     value: i,
@@ -135,7 +135,7 @@ const FaucetForm = (props: any) => {
             network = network?.toUpperCase();
             
             chainConfigs.forEach((chain: any, i: number): any => {
-                if(chain.TOKEN == token && chain.HOSTID == network) {
+                if(chain.TOKEN === token && chain.HOSTID === network) {
                     selectedConfig = i;
                 }
             })
@@ -155,13 +155,13 @@ const FaucetForm = (props: any) => {
 
         const tokenIndex: number = getConfigByTokenAndNetwork(erc20, subnet)
         
-        if(typeof address == "string") {
+        if(typeof address === "string") {
             updateAddress(address)
         }
 
-        if(typeof subnet == "string") {
+        if(typeof subnet === "string") {
             setChain(chainToIndex(subnet))
-            if(typeof erc20 == "string") {
+            if(typeof erc20 === "string") {
                 setToken(tokenIndex)
             }
         } else {
@@ -194,7 +194,7 @@ const FaucetForm = (props: any) => {
         }
         setIsFetchingBalance(controller)
 
-        if((chain || chain == 0) && chainConfigs.length > 0) {
+        if((chain || chain === 0) && chainConfigs.length > 0) {
             let { chain, erc20 } = getChainParams()
             
             const response: AxiosResponse = await props.axios.get(props.config.api.getBalance, {
@@ -205,14 +205,14 @@ const FaucetForm = (props: any) => {
                 signal: controller.signal
             })
         
-            if(response?.data?.balance || response?.data?.balance == 0) {
+            if(response?.data?.balance || response?.data?.balance === 0) {
                 setBalance(response?.data?.balance)
             }
         }
     }
 
     async function updateFaucetAddress(): Promise<void> {
-        if((chain || chain == 0) && chainConfigs.length > 0) {
+        if((chain || chain === 0) && chainConfigs.length > 0) {
             let { chain } = getChainParams()
             
             const response: AxiosResponse = await props.axios.get(props.config.api.faucetAddress, {
@@ -229,12 +229,12 @@ const FaucetForm = (props: any) => {
 
     function chainToIndex(id: any): number | null {
         if(chainConfigs?.length > 0) {
-            if(typeof id == "string") {
+            if(typeof id === "string") {
                 id = id.toUpperCase()
             }
             let index: number = 0
             chainConfigs.forEach((chain: any, i: number) => {
-                if(id == chain.ID) {
+                if(id === chain.ID) {
                     index = i
                 }
             })
@@ -260,6 +260,7 @@ const FaucetForm = (props: any) => {
 
     async function getCaptchaToken(): Promise<{token?:string, v2Token?: string}> {
         const { token, v2Token } = await recaptcha!.getToken(isV2)
+        console.log(token)
         return { token, v2Token }
     }
 
@@ -305,7 +306,7 @@ const FaucetForm = (props: any) => {
             data = err?.response?.data || err
         }
 
-        if(typeof data?.message == "string") {
+        if(typeof data?.message === "string") {
             if(data.message.includes("Captcha verification failed")) {
                 setIsV2(true)
                 !isV2 && recaptcha?.loadV2Captcha(props.config.V2_SITE_KEY);
@@ -323,7 +324,7 @@ const FaucetForm = (props: any) => {
     const getOptionByValue = (value: any): DropdownOption => {
         let selectedOption: DropdownOption = options[0]
         options.forEach((option: DropdownOption): void => {
-            if(option.value == value) {
+            if(option.value === value) {
                 selectedOption = option
             }
         })
@@ -333,7 +334,7 @@ const FaucetForm = (props: any) => {
     const getTokenOptionByValue = (value: any): DropdownOption => {
         let selectedOption: DropdownOption = tokenOptions[0]
         tokenOptions.forEach((option: DropdownOption): void => {
-            if(option.value == value) {
+            if(option.value === value) {
                 selectedOption = option
             }
         })
@@ -441,7 +442,7 @@ const FaucetForm = (props: any) => {
             const hour = ~~(mins / 60)
             const minute = mins % 60
 
-            if(minute == 0) {
+            if(minute === 0) {
                 return `${hour} hour${hour > 1 ? 's' : ''}`
             } else {
                 return `${hour} hour${hour > 1 ? 's' : ''} and ${minute} minute${minute > 1 ? 's' : ''}`

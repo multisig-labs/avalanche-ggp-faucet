@@ -46,7 +46,7 @@ let evms = new Map<string, EVMInstanceAndConfig>()
 const getChainByID = (chains: ChainType[], id: string): ChainType | undefined => {
     let reply: ChainType | undefined
     chains.forEach((chain: ChainType): void => {
-        if(chain.ID == id) {
+        if(chain.ID === id) {
             reply = chain
         }
     })

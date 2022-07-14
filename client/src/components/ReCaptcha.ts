@@ -48,7 +48,7 @@ export default class ReCaptcha {
     loadV2Captcha = (v2siteKey: string) => {
         const v2CaptchaContainer = document.getElementsByClassName('v2-recaptcha')[0]
 
-        if(this.widgetID || this.widgetID == "0") {
+        if(this.widgetID || this.widgetID === "0") {
             const v2CaptchaContainer = <HTMLElement>document.getElementsByClassName('v2-recaptcha')[0]
             if(v2CaptchaContainer) {
                 v2CaptchaContainer.style.display = "block"

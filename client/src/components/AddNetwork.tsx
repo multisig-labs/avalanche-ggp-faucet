@@ -8,7 +8,7 @@ const addNetwork = async (config: any): Promise<void> => {
     if(!config) {
         return
     }
-    if(window.ethereum == undefined) {
+    if(window.ethereum === undefined) {
         window.open('https://metamask.io/download', '_blank')
     }
 
@@ -34,7 +34,7 @@ const addAsset = async (config: any): Promise<void> => {
     if(!config) {
         return
     }
-    if(window.ethereum == undefined) {
+    if(window.ethereum === undefined) {
         window.open('https://metamask.io/download', '_blank')
     }
 
