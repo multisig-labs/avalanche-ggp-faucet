@@ -30,7 +30,7 @@
         {
             "ID": "LOC",
             "NAME": "Localhost (hardhat)",
-            "TOKEN": "",
+            "TOKEN": "AVAX",
             "RPC": "http://127.0.0.1:8545/ext/bc/C/rpc",
             "CHAINID": 43112,
             "EXPLORER": "https://testnet.snowtrace.io",
