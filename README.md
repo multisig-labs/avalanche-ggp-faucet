@@ -1,3 +1,6 @@
+# Avalanche GGP Faucet
+Right now the faucet is setup only for the fuji testnet and localhost. We can replace localhost with ANR to get it running on ANR. We will just need to change the contract address for the ggp token in the configs.json file under the ERC20 tokens section.
+
 # Avalanche Subnet Faucet
 
 Right now there are thousands of networks and chains in the blockchain space, each with its capabilities and use-cases. And each network requires native coins to do any transaction on them, which can have a monetary value as well. These coins can be collected through centralized exchanges, token sales, etc in exchange for some monetary assets like USD.
