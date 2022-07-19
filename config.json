@@ -32,7 +32,7 @@
             "NAME": "Localhost (hardhat)",
             "TOKEN": "AVAX",
             "RPC": "http://127.0.0.1:8545/ext/bc/C/rpc",
-            "CHAINID": 43112,
+            "CHAINID": 43114,
             "EXPLORER": "https://testnet.snowtrace.io",
             "IMAGE": "https://raw.githubusercontent.com/ava-labs/subnet-assets/main/chains/43113/token-logo.png",
             "MAX_PRIORITY_FEE": "2000000000",
@@ -45,19 +45,20 @@
             }
         },
         {
-            "ID": "NMAC",
-            "NAME": "Rise of the Warbots Testnet",
-            "TOKEN": "NMAC",
-            "RPC": "https://testnet1.rotw.games",
-            "CHAINID": 7777,
-            "EXPLORER": "https://testnet.avascan.info/blockchain/nmac",
-            "IMAGE": "https://rotw.games/assets/icons/icon_nmac_fill.png",
+            "ID": "ANR",
+            "NAME": "Avalanche node runner",
+            "TOKEN": "AVAX",
+            "RPC": "https://anr.fly.dev/ext/bc/C/rpc",
+            "CHAINID": 43112,
+            "EXPLORER": "https://testnet.snowtrace.io",
+            "IMAGE": "https://raw.githubusercontent.com/ava-labs/subnet-assets/main/chains/43113/token-logo.png",
             "MAX_PRIORITY_FEE": "2000000000",
             "MAX_FEE": "100000000000",
             "DRIP_AMOUNT": 2000000000,
+            "RECALIBRATE": 30,
             "RATELIMIT": {
-                "MAX_LIMIT": 1,
-                "WINDOW_SIZE": 1440
+                "MAX_LIMIT": 0,
+                "WINDOW_SIZE": 0
             }
         }
     ],
@@ -78,16 +79,16 @@
         },
         {
             "ID": "GGP",
-            "HOSTID": "LOC",
+            "HOSTID": "ANR",
             "NAME": "GGP",
             "TOKEN": "GGP",
-            "CONTRACTADDRESS": "0x3Aa5ebB10DC797CAC828524e59A333d0A371443c",
+            "CONTRACTADDRESS": "0x049d189BB264FE7FBF38BfBAba83562Fbb6d7DEb",
             "DRIP_AMOUNT": 10000000000,
             "GASLIMIT": "150000",
             "DECIMALS": 1,
             "RATELIMIT": {
-                "MAX_LIMIT": 1,
-                "WINDOW_SIZE": 1440
+                "MAX_LIMIT": 0,
+                "WINDOW_SIZE": 0
             }
         }
     ]
