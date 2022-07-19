@@ -1,5 +1,5 @@
 # Avalanche GGP Faucet
-Right now the faucet is setup only for the fuji testnet and localhost. We can replace localhost with ANR to get it running on ANR. We will just need to change the contract address for the ggp token in the configs.json file under the ERC20 tokens section.
+Right now the faucet is setup for the fuji testnet and ANR. We currently have ggp and avax as the tokens for ANR.
 1. Deploy the [gogopool-contracts](https://github.com/multisig-labs/gogopool-contracts) using just deploy-base and just deploy
 2. Take the localhost url and ggp contract address from the terminal output and add it to the [avalanche-ggp-faucet configs.json file](https://github.com/multisig-labs/avalanche-ggp-faucet/blob/main/config.json)
 3. Start this faucet by running ```npm install``` (if needed) and ```npm run dev```
