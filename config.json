@@ -23,30 +23,13 @@
             "DRIP_AMOUNT": 2000000000,
             "RECALIBRATE": 30,
             "RATELIMIT": {
-                "MAX_LIMIT": 1,
-                "WINDOW_SIZE": 1440
-            }
-        },
-        {
-            "ID": "LOC",
-            "NAME": "Localhost (hardhat)",
-            "TOKEN": "AVAX",
-            "RPC": "http://127.0.0.1:8545/ext/bc/C/rpc",
-            "CHAINID": 43114,
-            "EXPLORER": "https://testnet.snowtrace.io",
-            "IMAGE": "https://raw.githubusercontent.com/ava-labs/subnet-assets/main/chains/43113/token-logo.png",
-            "MAX_PRIORITY_FEE": "2000000000",
-            "MAX_FEE": "100000000000",
-            "DRIP_AMOUNT": 2000000000,
-            "RECALIBRATE": 30,
-            "RATELIMIT": {
-                "MAX_LIMIT": 1,
-                "WINDOW_SIZE": 1440
+                "MAX_LIMIT": 0,
+                "WINDOW_SIZE": 0
             }
         },
         {
             "ID": "ANR",
-            "NAME": "Avalanche node runner",
+            "NAME": "Avalanche Node Runner",
             "TOKEN": "AVAX",
             "RPC": "https://anr.fly.dev/ext/bc/C/rpc",
             "CHAINID": 43112,
@@ -54,7 +37,7 @@
             "IMAGE": "https://raw.githubusercontent.com/ava-labs/subnet-assets/main/chains/43113/token-logo.png",
             "MAX_PRIORITY_FEE": "2000000000",
             "MAX_FEE": "100000000000",
-            "DRIP_AMOUNT": 2000000000,
+            "DRIP_AMOUNT": 10000000000,
             "RECALIBRATE": 30,
             "RATELIMIT": {
                 "MAX_LIMIT": 0,
@@ -73,8 +56,8 @@
             "GASLIMIT": "150000",
             "DECIMALS": 18,
             "RATELIMIT": {
-                "MAX_LIMIT": 1,
-                "WINDOW_SIZE": 1440
+                "MAX_LIMIT": 0,
+                "WINDOW_SIZE": 0
             }
         },
         {
