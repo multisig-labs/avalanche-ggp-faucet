@@ -4,7 +4,7 @@
   "description": "",
   "main": "server.js",
   "engines": {
-    "node": ">=17"
+    "node": ">=16"
   },
   "scripts": {
     "postinstall": "npm install --prefix client",
