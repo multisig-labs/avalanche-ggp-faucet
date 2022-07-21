@@ -1,8 +1,18 @@
 # Avalanche GGP Faucet
+Faucet is live @ [anr-ggp-faucet.fly.dev](https://anr-ggp-faucet.fly.dev/)
+
 Right now the faucet is setup for the fuji testnet and ANR. We currently have ggp and avax as the tokens for ANR.
-1. Deploy the [gogopool-contracts](https://github.com/multisig-labs/gogopool-contracts) using just deploy-base and just deploy
-2. Take the localhost url and ggp contract address from the terminal output and add it to the [avalanche-ggp-faucet configs.json file](https://github.com/multisig-labs/avalanche-ggp-faucet/blob/main/config.json)
-3. Start this faucet by running ```npm install``` (if needed) and ```npm run dev```
+
+## Fly.io Notes
+
+If you are working off an apple M1 machine, you should build the docker image locally as an amd64 and then push it to fly's servers (amd64 machines). 
+
+To do build as amd64 use the ```--platform linux/amd64```. The exact command in this case was  ``` docker build --platform linux/amd64 . -t registry.fly.io/anr-ggp-faucet:anr-ggp-faucet-v0```. How to push to fly.io registry: https://til.simonwillison.net/fly/fly-docker-registry
+
+Also make sure you have your fly.toml file pushed remotely to github - not sure why but this seems to be what fixed the unhealthy deployment to fly.
+
+Article on build platforms for background knowledge: https://www.smartling.com/resources/product/building-multi-architecture-docker-images-on-arm-64-bit-aws-graviton2/
+
 
 # Avalanche Subnet Faucet
 
