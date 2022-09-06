@@ -1,78 +1,78 @@
 {
-    "GLOBAL_RL": {
-        "ID": "GLOBAL",
-        "RATELIMIT": {
-            "REVERSE_PROXIES": 2,
-            "MAX_LIMIT": 40,
-            "WINDOW_SIZE": 1,
-            "PATH": "/",
-            "SKIP_FAILED_REQUESTS": false
-        }
+  "GLOBAL_RL": {
+    "ID": "GLOBAL",
+    "RATELIMIT": {
+      "REVERSE_PROXIES": 2,
+      "MAX_LIMIT": 40,
+      "WINDOW_SIZE": 1,
+      "PATH": "/",
+      "SKIP_FAILED_REQUESTS": false
+    }
+  },
+  "evmchains": [
+    {
+      "ID": "C",
+      "NAME": "Fuji (C-Chain)",
+      "TOKEN": "AVAX",
+      "RPC": "https://api.avax-test.network/ext/C/rpc",
+      "CHAINID": 43113,
+      "EXPLORER": "https://testnet.snowtrace.io",
+      "IMAGE": "https://raw.githubusercontent.com/ava-labs/subnet-assets/main/chains/43113/token-logo.png",
+      "MAX_PRIORITY_FEE": "2000000000",
+      "MAX_FEE": "100000000000",
+      "DRIP_AMOUNT": 2000000000,
+      "RECALIBRATE": 30,
+      "RATELIMIT": {
+        "MAX_LIMIT": 0,
+        "WINDOW_SIZE": 0
+      }
     },
-    "evmchains": [
-        {
-            "ID": "C",
-            "NAME": "Fuji (C-Chain)",
-            "TOKEN": "AVAX",
-            "RPC": "https://api.avax-test.network/ext/C/rpc",
-            "CHAINID": 43113,
-            "EXPLORER": "https://testnet.snowtrace.io",
-            "IMAGE": "https://raw.githubusercontent.com/ava-labs/subnet-assets/main/chains/43113/token-logo.png",
-            "MAX_PRIORITY_FEE": "2000000000",
-            "MAX_FEE": "100000000000",
-            "DRIP_AMOUNT": 2000000000,
-            "RECALIBRATE": 30,
-            "RATELIMIT": {
-                "MAX_LIMIT": 0,
-                "WINDOW_SIZE": 0
-            }
-        },
-        {
-            "ID": "ANR",
-            "NAME": "Avalanche Node Runner",
-            "TOKEN": "AVAX",
-            "RPC": "https://anr.fly.dev/ext/bc/C/rpc",
-            "CHAINID": 43112,
-            "EXPLORER": "https://testnet.snowtrace.io",
-            "IMAGE": "https://raw.githubusercontent.com/ava-labs/subnet-assets/main/chains/43113/token-logo.png",
-            "MAX_PRIORITY_FEE": "2000000000",
-            "MAX_FEE": "100000000000",
-            "DRIP_AMOUNT": 10000000000,
-            "RECALIBRATE": 30,
-            "RATELIMIT": {
-                "MAX_LIMIT": 0,
-                "WINDOW_SIZE": 0
-            }
-        }
-    ],
-    "erc20tokens": [
-        {
-            "ID": "WAVAXC",
-            "HOSTID": "C",
-            "NAME": "Wrapped AVAX",
-            "TOKEN": "WAVAX",
-            "CONTRACTADDRESS": "0xd00ae08403B9bbb9124bB305C09058E32C39A48c",
-            "DRIP_AMOUNT": 2000000000,
-            "GASLIMIT": "150000",
-            "DECIMALS": 18,
-            "RATELIMIT": {
-                "MAX_LIMIT": 0,
-                "WINDOW_SIZE": 0
-            }
-        },
-        {
-            "ID": "GGP",
-            "HOSTID": "ANR",
-            "NAME": "GGP",
-            "TOKEN": "GGP",
-            "CONTRACTADDRESS": "0x049d189BB264FE7FBF38BfBAba83562Fbb6d7DEb",
-            "DRIP_AMOUNT": 10000000000,
-            "GASLIMIT": "150000",
-            "DECIMALS": 1,
-            "RATELIMIT": {
-                "MAX_LIMIT": 0,
-                "WINDOW_SIZE": 0
-            }
-        }
-    ]
+    {
+      "ID": "ANR",
+      "NAME": "Avalanche Node Runner",
+      "TOKEN": "AVAX",
+      "RPC": "https://anr.fly.dev/ext/bc/C/rpc",
+      "CHAINID": 43112,
+      "EXPLORER": "https://testnet.snowtrace.io",
+      "IMAGE": "https://raw.githubusercontent.com/ava-labs/subnet-assets/main/chains/43113/token-logo.png",
+      "MAX_PRIORITY_FEE": "2000000000",
+      "MAX_FEE": "100000000000",
+      "DRIP_AMOUNT": 1000000000000,
+      "RECALIBRATE": 30,
+      "RATELIMIT": {
+        "MAX_LIMIT": 0,
+        "WINDOW_SIZE": 0
+      }
+    }
+  ],
+  "erc20tokens": [
+    {
+      "ID": "WAVAXC",
+      "HOSTID": "C",
+      "NAME": "Wrapped AVAX",
+      "TOKEN": "WAVAX",
+      "CONTRACTADDRESS": "0xd00ae08403B9bbb9124bB305C09058E32C39A48c",
+      "DRIP_AMOUNT": 2000000000,
+      "GASLIMIT": "150000",
+      "DECIMALS": 18,
+      "RATELIMIT": {
+        "MAX_LIMIT": 0,
+        "WINDOW_SIZE": 0
+      }
+    },
+    {
+      "ID": "GGP",
+      "HOSTID": "ANR",
+      "NAME": "GGP",
+      "TOKEN": "GGP",
+      "CONTRACTADDRESS": "0xa1E47689f396fED7d18D797d9D31D727d2c0d483",
+      "DRIP_AMOUNT": 1000000000000,
+      "GASLIMIT": "150000",
+      "DECIMALS": 1,
+      "RATELIMIT": {
+        "MAX_LIMIT": 0,
+        "WINDOW_SIZE": 0
+      }
+    }
+  ]
 }
