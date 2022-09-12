@@ -11,7 +11,7 @@ Below are the commands to redeploy to fly.io. This will need to be done each tim
 1. `docker build --platform linux/amd64 . -t registry.fly.io/anr-ggp-faucet:anr-ggp-faucet-v0`
 2. `flyctl auth docker`
 3. `docker push registry.fly.io/anr-ggp-faucet:anr-ggp-faucet-v0`
-4. `flyctl deploy --app datasette-demo --image registry.fly.io/datasette-demo:datasette-demo-v0`
+4. `flyctl deploy --app anr-ggp-faucet --image registry.fly.io/anr-ggp-faucet:anr-ggp-faucet-v0`
 
 ## Fly.io Notes
 
