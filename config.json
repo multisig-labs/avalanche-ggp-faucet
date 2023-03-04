@@ -61,6 +61,20 @@
       }
     },
     {
+      "ID": "GGP",
+      "HOSTID": "C",
+      "NAME": "GGP",
+      "TOKEN": "GGP",
+      "CONTRACTADDRESS": "0xDD7117639d0BC2d0Bcd5364c298be4A8B8BAff67",
+      "DRIP_AMOUNT": 2000000000,
+      "GASLIMIT": "150000",
+      "DECIMALS": 1,
+      "RATELIMIT": {
+        "MAX_LIMIT": 0,
+        "WINDOW_SIZE": 0
+      }
+    },
+    {
       "ID": "WAVAXC",
       "HOSTID": "C",
       "NAME": "Wrapped AVAX",
