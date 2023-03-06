@@ -20,7 +20,7 @@
       "IMAGE": "https://raw.githubusercontent.com/ava-labs/subnet-assets/main/chains/43113/token-logo.png",
       "MAX_PRIORITY_FEE": "2000000000",
       "MAX_FEE": "100000000000",
-      "DRIP_AMOUNT": 10001000000000,
+      "DRIP_AMOUNT": 1001000000000,
       "RECALIBRATE": 30,
       "RATELIMIT": {
         "MAX_LIMIT": 0,
@@ -52,9 +52,9 @@
       "NAME": "GGP",
       "TOKEN": "GGP",
       "CONTRACTADDRESS": "0x4091bF7460DF3C92206094CD177AB37DAe7d5acA",
-      "DRIP_AMOUNT": 1000000000000,
+      "DRIP_AMOUNT": 100000000000,
       "GASLIMIT": "150000",
-      "DECIMALS": 1,
+      "DECIMALS": 18,
       "RATELIMIT": {
         "MAX_LIMIT": 0,
         "WINDOW_SIZE": 0
@@ -68,7 +68,7 @@
       "CONTRACTADDRESS": "0xDD7117639d0BC2d0Bcd5364c298be4A8B8BAff67",
       "DRIP_AMOUNT": 2000000000,
       "GASLIMIT": "150000",
-      "DECIMALS": 1,
+      "DECIMALS": 18,
       "RATELIMIT": {
         "MAX_LIMIT": 0,
         "WINDOW_SIZE": 0
