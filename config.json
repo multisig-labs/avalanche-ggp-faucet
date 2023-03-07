@@ -37,7 +37,7 @@
       "IMAGE": "https://raw.githubusercontent.com/ava-labs/subnet-assets/main/chains/43113/token-logo.png",
       "MAX_PRIORITY_FEE": "2000000000",
       "MAX_FEE": "100000000000",
-      "DRIP_AMOUNT": 0,
+      "DRIP_AMOUNT": 2000000000,
       "RECALIBRATE": 30,
       "RATELIMIT": {
         "MAX_LIMIT": 0,
