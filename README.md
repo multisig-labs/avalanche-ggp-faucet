@@ -8,10 +8,10 @@ Right now the faucet is setup for the fuji testnet and ANR. We currently have gg
 
 Below are the commands to redeploy to fly.io. This will need to be done each time you make a change to the code. Replace `v0` with what the new version will be
 
-docker build --platform linux/amd64 . -t registry.fly.io/anr-ggp-faucet:anr-ggp-faucet-v27
+docker build --platform linux/amd64 . -t registry.fly.io/anr-ggp-faucet:anr-ggp-faucet-v29
 flyctl auth docker
-docker push registry.fly.io/anr-ggp-faucet:anr-ggp-faucet-v27
-flyctl deploy --app anr-ggp-faucet --image registry.fly.io/anr-ggp-faucet:anr-ggp-faucet-v27
+docker push registry.fly.io/anr-ggp-faucet:anr-ggp-faucet-v29
+flyctl deploy --app anr-ggp-faucet --image registry.fly.io/anr-ggp-faucet:anr-ggp-faucet-v29
 
 ## Fly.io Notes
 
