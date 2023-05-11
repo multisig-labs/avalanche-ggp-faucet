@@ -1,4 +1,4 @@
-FROM node:18.2.0
+FROM node:19
 
 WORKDIR /avalanche-faucet
 
