@@ -1,11 +1,11 @@
 {
-    "banner": "/banner.webp",
-    "apiBaseEndpointProduction": "/api/",
-    "apiBaseEndpointDevelopment": "http://localhost:8000/api/",
-    "apiTimeout": 10000,
-    "CAPTCHA": {
-        "siteKey": "6Lc0Q-IgAAAAAEw9XKGhlgpB2xsFJ8gWYTfiyGvQ",
-        "v2siteKey": "6LcPmIYgAAAAADKWHw28ercYsZV7QbDMz_SUeK-Q", 
-        "action": "faucetdrip"
-    }
+  "banner": "/banner.webp",
+  "apiBaseEndpointProduction": "/api/",
+  "apiBaseEndpointDevelopment": "http://chandlers-macbook-pro:8000/api/",
+  "apiTimeout": 10000,
+  "CAPTCHA": {
+    "siteKey": "6Lf_OBYpAAAAAOPvZbCYmsnTaDDGdtOdzwta12XI",
+    "v2siteKey": "6LcPmIYgAAAAADKWHw28ercYsZV7QbDMz_SUeK-Q",
+    "action": "faucetdrip"
+  }
 }

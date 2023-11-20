@@ -26,6 +26,23 @@
         "MAX_LIMIT": 0,
         "WINDOW_SIZE": 0
       }
+    },
+    {
+      "ID": "BPAY",
+      "NAME": "Blockpay Testnet Subnet",
+      "TOKEN": "BPAY",
+      "RPC": "https://blockpay.oonodz.io",
+      "CHAINID": 1445,
+      "EXPLORER": "https://expedition.fly.dev/?rpcUrl=https://blockpay.oonodz.io",
+      "IMAGE": "https://avatars.githubusercontent.com/u/142548834",
+      "MAX_PRIORITY_FEE": "2000000000",
+      "MAX_FEE": "100000000000",
+      "DRIP_AMOUNT": 2000000000,
+      "RECALIBRATE": 30,
+      "RATELIMIT": {
+        "MAX_LIMIT": 2,
+        "WINDOW_SIZE": 1440
+      }
     }
   ],
   "erc20tokens": [
@@ -39,8 +56,22 @@
       "GASLIMIT": "150000",
       "DECIMALS": 18,
       "RATELIMIT": {
-        "MAX_LIMIT": 0,
-        "WINDOW_SIZE": 0
+        "MAX_LIMIT": 2,
+        "WINDOW_SIZE": 1440
+      }
+    },
+    {
+      "ID": "BPay",
+      "HOSTID": "FUJI",
+      "NAME": "BlockPay BPay",
+      "TOKEN": "BPAY",
+      "CONTRACTADDRESS": "0x120266ef29555acde69bf6402d37bb2c19d6c927",
+      "DRIP_AMOUNT": 2000000000,
+      "GASLIMIT": "150000",
+      "DECIMALS": 18,
+      "RATELIMIT": {
+        "MAX_LIMIT": 2,
+        "WINDOW_SIZE": 1440
       }
     }
   ]
