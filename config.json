@@ -43,6 +43,22 @@
         "MAX_LIMIT": 2,
         "WINDOW_SIZE": 1440
       }
+    },
+    {
+      "ID": "COQINU-DEV",
+      "NAME": "Coq Devnet",
+      "TOKEN": "COQ",
+      "RPC": "https://subnets.avacloud.io/b154f54f-8755-46ee-90d6-fc519ab52cc4",
+      "IMAGE": "https://www.coqinu.com/coqinu-incoqwetrust.png",
+      "EXPLORER":"https://expedition.fly.dev/?rpcUrl=https://subnets.avacloud.io/b154f54f-8755-46ee-90d6-fc519ab52cc4",
+      "MAX_PRIORITY_FEE": "2000000000",
+      "MAX_FEE": "100000000000",
+      "DRIP_AMOUNT": 2000000000,
+      "RECALIBRATE": 30,
+      "RATELIMIT": {
+        "MAX_LIMIT": 2,
+        "WINDOW_SIZE": 1440
+      }
     }
   ],
   "erc20tokens": [
