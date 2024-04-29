@@ -73,6 +73,20 @@
         "MAX_LIMIT": 2,
         "WINDOW_SIZE": 1440
       }
+    },
+    {
+      "ID": "COQINU",
+      "HOSTID": "FUJI",
+      "NAME": "Coqinu",
+      "TOKEN": "COQ",
+      "CONTRACTADDRESS": "0xa8DA748Fbe6ba75AB89940612dE65e88C10A202F",
+      "DRIP_AMOUNT": 2000000000000,
+      "GASLIMIT": "150000",
+      "DECIMALS": 18,
+      "RATELIMIT": {
+        "MAX_LIMIT": 2,
+        "WINDOW_SIZE": 1440
+      }
     }
   ]
 }
